@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="post" name="form">
+
+        <input type="hidden" name="id" id="id">
+
+        <label for="">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="">Age:</label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="gender1" value="Male">Male
+        <input type="radio" name="gender" id="gender2" value="Female">Female
+        <br><br>
+
+        <input type="button" value="Save" onclick="savedata()">
+    </form>
+
+
+    <table border="2">
+
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+
+        <tbody id="alldata"></tbody>
+        
+    </table>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="crud.js"></script>
+    
+</body>
+</html>
